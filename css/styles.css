@@ -18,6 +18,32 @@ fieldset{border-width:0; padding:0; margin:0;}
 
 /*--STRUCTURE----------------------------------------------------------------*/
 
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 96px;
+}
+
+.hero, main, footer {
+  width: 100%;
+  clear: both;
+}
+
+.hero {
+  margin-top: 96px;
+}
+
+.sidebar {
+  float: left;
+  width: 31%;
+}
+
+article {
+  float: right;
+  width: 64%;
+}
 
 /*--TYPE---------------------------------------------------------------------*/
 
