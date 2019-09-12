@@ -80,7 +80,7 @@ nav.side ul li a.active, nav.side ul li a:hover {
 article {
   float: right;
   width: 64%;
-  padding-right: 48px;
+  padding: 0 56px 56px 0;
 }
 
 article table {
@@ -116,6 +116,12 @@ article table {
   background: #4F66EE;
   width: auto;
   margin-top: 48px;
+}
+
+footer {
+  height: 116px;
+  background: #212123;
+  padding: 40px 56px;
 }
 
 /*--TYPE---------------------------------------------------------------------*/
@@ -207,6 +213,13 @@ article table td span {
 
 .newsletter-signup form input.btn {
   color: #FFFFFF;
+}
+
+footer {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 36px;
 }
 
 /*--SMALL SCREENS------------------------------------------------------------*/
