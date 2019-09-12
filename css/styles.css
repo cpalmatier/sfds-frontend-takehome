@@ -3,6 +3,7 @@
 /*--RESETS-------------------------------------------------------------------*/
 /*  From Eric Meyer's Reset CSS | https://meyerweb.com/eric/tools/css/reset/ */
 
+
 *,
 *::before,
 *::after{box-sizing:border-box;}
@@ -24,6 +25,7 @@ header {
   left: 0;
   width: 100%;
   height: 96px;
+  padding: 30px 56px;
   background: #4F66EE;
 }
 
@@ -48,12 +50,30 @@ nav.top ul li {
 
 .hero {
   margin-top: 96px;
+  padding: 56px;
   background: #4F66EE;
+}
+
+main {
+  padding-top: 56px;
 }
 
 .sidebar {
   float: left;
   width: 31%;
+}
+
+nav.side ul li a {
+  display: block;
+  height: 80px;
+  padding: 28px 28px 28px 56px;
+  margin-bottom: 24px;
+}
+
+nav.side ul li a.active, nav.side ul li a:hover {
+  background: #4F66EE;
+  border-bottom-right-radius: 80px;
+  border-top-right-radius: 80px;
 }
 
 article {
@@ -110,10 +130,12 @@ header {
 
 header span {
   font-size: 36px;
+  line-height: 36px;
 }
 
 nav.top ul li {
   font-size: 24px;
+  line-height: 36px;
 }
 
 .hero {
@@ -125,9 +147,15 @@ nav.top ul li {
   font-weight: bold;
 }
 
-nav.side ul li {
+nav.side ul li a {
   font-size: 24px;
   font-weight: bold;
+  color: #4F66EE;
+  line-height: 24px;
+}
+
+nav.side ul li a.active, nav.side ul li a:hover {
+  color: #FFFFFF;
 }
 
 h2 {
