@@ -52,8 +52,10 @@ nav.top ul li {
 
 .hero {
   margin-top: 96px;
-  padding: 56px;
-  background: #4F66EE;
+  padding: 88px 56px 0 56px;
+  height: 400px;
+  background: center url('../images/golden-gate-bg.jpg') #4F66EE;
+  background-size: cover;
 }
 
 main {
@@ -87,6 +89,7 @@ article {
 article img {
   width: 100%;
   height: auto;
+  margin-bottom: 56px;
 }
 
 article table {
