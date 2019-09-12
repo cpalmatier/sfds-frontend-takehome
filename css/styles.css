@@ -52,8 +52,7 @@ nav.top ul li {
 
 .hero {
   margin-top: 96px;
-  padding: 88px 56px 0 56px;
-  height: 400px;
+  padding: 88px 56px;
   background: center url('../images/golden-gate-bg.jpg') #4F66EE;
   background-size: cover;
 }
@@ -276,12 +275,266 @@ footer {
   line-height: 36px;
 }
 
+/*--UTILITIES----------------------------------------------------------------*/
+
+.hide-on-large {
+  display: none;
+}
+
+.hide-on-small {
+  display: inherit;
+}
+
 /*--SMALL SCREENS------------------------------------------------------------*/
 
+@media only screen and (max-width: 1180px) and (min-width: 768px) {
+  /*UTILITIES*/
+  .hide-on-large {
+    display: inherit;
+  }
+
+  .hide-on-small {
+    display: none;
+  }
+
+  header span a {
+    text-decoration: underline;
+  }
+
+  .hero {
+    padding: 56px;
+  }
+
+  .hero h1 {
+    font-size: 72px;
+  }
+
+  nav.side ul li a {
+    display: block;
+    height: 56px;
+    padding: 19px 12px 19px 56px;
+    margin-bottom: 18px;
+    text-decoration: underline;
+  }
+
+  nav.side ul li a.write {
+    background-image: none;
+  }
+
+  nav.side ul li a.active, nav.side ul li a:hover {
+    background: #4F66EE;
+    text-decoration: none;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 80px;
+  }
+
+  nav.side ul li a.write:hover {
+    background-image: none;
+  }
+
+  nav.side ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4F66EE;
+    line-height: 18px;
+  }
+  
+}
+
 @media only screen and (max-width: 767px) {
+
+  /*STRUCTURE*/
+
+  header {
+    height: 56px;
+    padding: 0 12px;
+  }
+
+  .hero {
+    margin-top: 56px;
+    padding: 36px 12px;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
   .sidebar, article {
     float: none;
     width: 100%;
     clear: both;
+  }
+
+  nav.side {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+  }
+
+  nav.side::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+  }
+
+  nav.side ul li {
+    display: inline-block;
+  }
+
+  nav.side ul li a {
+    display: inline-block;
+    height: 36px;
+    padding: 0 12px;
+    margin-bottom: 0;
+    text-decoration: underline;
+  }
+
+  nav.side ul li a.write {
+    background-image: none;
+  }
+
+  nav.side ul li a.active, nav.side ul li a:hover {
+    background: #4F66EE;
+    border-radius: 0;
+    text-decoration: none;
+  }
+
+  nav.side ul li a.write:hover {
+    background-image: none;
+  }
+
+  article {
+    padding: 24px 12px;
+  }
+
+  article img {
+    margin-bottom: 36px;
+  }
+
+  article table {
+    padding-top: 0;
+  }
+
+  article table tr {
+    display: block;
+  }
+
+  article table tr td {
+    display: block;
+    width: 100%;
+    border-bottom: none;
+    padding: 0;
+  }
+
+  article table tr td:last-child {
+    padding-bottom: 18px; 
+  }
+
+  .newsletter-signup {
+    padding: 12px;
+  }
+
+  .newsletter-signup h3 {
+    background-image: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .newsletter-signup form input, .newsletter-signup form label, .newsletter-signup form select {
+    display: block;
+    width: 100%;
+  }
+
+  .newsletter-signup form label {
+    margin-top: 18px;
+    margin-bottom: 6px;
+  }
+
+  .newsletter-signup form input, .newsletter-signup form select {
+    border: 3px solid #1C3E57;
+    border-radius: 9px;
+    background: #FFFFFF;
+    height: 42px;
+    padding: 0 12px;
+  }
+
+  .newsletter-signup form input.btn {
+    border: none;
+    background: #4F66EE;
+    width: 100%;
+    margin-top: 18px;
+  }
+
+  footer {
+    height: 56px;
+    padding: 19px 0;
+  }
+
+  /*TYPE*/
+  header span {
+    font-size: 18px;
+    line-height: 56px;
+  }
+
+  header span a {
+    text-decoration: underline;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 1.15;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  nav.side ul li a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4F66EE;
+    line-height: 36px;
+  }
+
+  article table tr td, article table td span {
+    font-size: 18px;
+  }
+
+  article table tr td:first-child {
+    font-weight: bold; 
+  }
+
+  .newsletter-signup form input, .newsletter-signup form label, .newsletter-signup form select {
+    font-size: 14px;
+  }
+
+  .newsletter-signup form input, .newsletter-signup form select {
+    line-height: 42px;
+  }
+
+  footer {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  /*UTILITIES*/
+  .hide-on-large {
+    display: inherit;
+  }
+
+  .hide-on-small {
+    display: none;
   }
 }
