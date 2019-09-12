@@ -72,12 +72,26 @@ nav.side ul li a {
   height: 80px;
   padding: 28px 28px 28px 56px;
   margin-bottom: 24px;
+  text-decoration: underline;
+}
+
+nav.side ul li a.write {
+  background-image: url(../images/pencil-purple.svg);
+  background-repeat: no-repeat;
+  background-position: 140px 20px;
 }
 
 nav.side ul li a.active, nav.side ul li a:hover {
   background: #4F66EE;
+  text-decoration: none;
   border-bottom-right-radius: 80px;
   border-top-right-radius: 80px;
+}
+
+nav.side ul li a.write:hover {
+  background-image: url(../images/pencil-white.svg);
+  background-repeat: no-repeat;
+  background-position: 140px 20px;
 }
 
 article {
@@ -115,7 +129,15 @@ article table tr:last-child td {
 .newsletter-signup {
   background: #ECF0FD;
   border-radius: 9px;
-  padding: 30px 88px 48px 88px;
+  padding: 40px 88px 48px 88px;
+}
+
+.newsletter-signup h3 {
+  background-image: url(../images/mail-black.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-left: 64px;
+  margin-left: -64px;
 }
 
 .newsletter-signup form input, .newsletter-signup form label, .newsletter-signup form select {
@@ -170,6 +192,10 @@ nav.top ul li {
   line-height: 56px;
 }
 
+nav.top ul li a:hover {
+  text-decoration: underline;
+}
+
 nav.top ul li a.nav-btn {
   display: inline-block;
   height: 56px;
@@ -207,6 +233,7 @@ h2 {
 
 h3 {
   font-size: 36px;
+  line-height: 40px;
   font-weight: bold;
 }
 
